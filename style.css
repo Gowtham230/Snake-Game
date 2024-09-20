@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0px;
+    font-size:20px;
+    box-sizing: border-box;
+    font-family:"Roboto";
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background:darkgoldenrod;
+    min-height:100vh;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    border-radius:5px;
+    width:80vmin;
+    height:80vmin;
+    background:rebeccapurple;
+    overflow: hidden;
+}
+.snake-box{
+    display:flex;
+    border-radius:20px;
+    padding:5px;
+    color: azure;
+    justify-content:center;
+    
+}
+.score-container{
+    display:flex;
+    border-radius:20px;
+    padding:5px;
+    color: azure;
+    justify-content:space-between;
+}
+.play-board{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+        background:brown;
+}
+.play-board .snake{
+    background: deepskyblue;
+    border-radius:5px;
+    
+}
+.play-board .food{
+    background:greenyellow;
+    border-radius:10px;
+
+}
